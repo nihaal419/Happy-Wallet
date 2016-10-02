@@ -14,6 +14,7 @@
 		0667E9611DA09BCA00494174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0667E95F1DA09BCA00494174 /* LaunchScreen.storyboard */; };
 		0667E96C1DA09BCA00494174 /* Happy_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667E96B1DA09BCA00494174 /* Happy_WalletTests.swift */; };
 		0667E9771DA09BCA00494174 /* Happy_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667E9761DA09BCA00494174 /* Happy_WalletUITests.swift */; };
+		0667E9851DA0A18F00494174 /* Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667E9841DA0A18F00494174 /* Editing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0667E9721DA09BCA00494174 /* Happy WalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Happy WalletUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0667E9761DA09BCA00494174 /* Happy_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_WalletUITests.swift; sourceTree = "<group>"; };
 		0667E9781DA09BCA00494174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0667E9841DA0A18F00494174 /* Editing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				0667E9561DA09BCA00494174 /* AppDelegate.swift */,
 				0667E9581DA09BCA00494174 /* ViewController.swift */,
+				0667E9841DA0A18F00494174 /* Editing.swift */,
 				0667E95A1DA09BCA00494174 /* Main.storyboard */,
 				0667E95D1DA09BCA00494174 /* Assets.xcassets */,
 				0667E95F1DA09BCA00494174 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0667E9851DA0A18F00494174 /* Editing.swift in Sources */,
 				0667E9591DA09BCA00494174 /* ViewController.swift in Sources */,
 				0667E9571DA09BCA00494174 /* AppDelegate.swift in Sources */,
 			);
