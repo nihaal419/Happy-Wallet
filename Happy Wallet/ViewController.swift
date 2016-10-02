@@ -36,6 +36,8 @@ class ViewController: UIViewController {
     
     func setMonthlyBudget(monthlyBudget: Double){
         self.budget = monthlyBudget
+        let b:String = String(format:"%f", monthlyBudget)
+        monthlyLabel.text = b
     }
     
     func setExpense(expense: Double){

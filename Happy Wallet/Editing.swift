@@ -79,6 +79,9 @@ class Editing: UIViewController {
     
     @IBAction func moveBack(_ sender: AnyObject) {
 //        navigationController?.popToRootViewController(animated: true)
+        let myDouble = Double(finalString)
+        let view = ViewController()
+        view.setMonthlyBudget(monthlyBudget: myDouble!)
     }
     
     override func viewDidLoad() {
