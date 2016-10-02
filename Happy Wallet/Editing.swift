@@ -14,7 +14,7 @@ class Editing: UIViewController {
     
     
     @IBAction func moveBack(_ sender: AnyObject) {
-        navigationController?.popToRootViewController(animated: true)
+//        navigationController?.popToRootViewController(animated: true)
     }
     
     override func viewDidLoad() {
