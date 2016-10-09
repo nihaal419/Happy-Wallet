@@ -15,6 +15,7 @@
 		0667E96C1DA09BCA00494174 /* Happy_WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667E96B1DA09BCA00494174 /* Happy_WalletTests.swift */; };
 		0667E9771DA09BCA00494174 /* Happy_WalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667E9761DA09BCA00494174 /* Happy_WalletUITests.swift */; };
 		0667E9851DA0A18F00494174 /* Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0667E9841DA0A18F00494174 /* Editing.swift */; };
+		06A2A9361DA9BD5100588FC8 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A2A9351DA9BD5100588FC8 /* Test.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0667E9761DA09BCA00494174 /* Happy_WalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happy_WalletUITests.swift; sourceTree = "<group>"; };
 		0667E9781DA09BCA00494174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0667E9841DA0A18F00494174 /* Editing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editing.swift; sourceTree = "<group>"; };
+		06A2A9351DA9BD5100588FC8 /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0667E9581DA09BCA00494174 /* ViewController.swift */,
 				0667E9841DA0A18F00494174 /* Editing.swift */,
 				0667E95A1DA09BCA00494174 /* Main.storyboard */,
+				06A2A9351DA9BD5100588FC8 /* Test.storyboard */,
 				0667E95D1DA09BCA00494174 /* Assets.xcassets */,
 				0667E95F1DA09BCA00494174 /* LaunchScreen.storyboard */,
 				0667E9621DA09BCA00494174 /* Info.plist */,
@@ -237,6 +240,7 @@
 			files = (
 				0667E9611DA09BCA00494174 /* LaunchScreen.storyboard in Resources */,
 				0667E95E1DA09BCA00494174 /* Assets.xcassets in Resources */,
+				06A2A9361DA9BD5100588FC8 /* Test.storyboard in Resources */,
 				0667E95C1DA09BCA00494174 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +511,7 @@
 				0667E97D1DA09BCA00494174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0667E97E1DA09BCA00494174 /* Build configuration list for PBXNativeTarget "Happy WalletTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				0667E9801DA09BCA00494174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0667E9811DA09BCA00494174 /* Build configuration list for PBXNativeTarget "Happy WalletUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				0667E9831DA09BCA00494174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

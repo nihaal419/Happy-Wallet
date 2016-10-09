@@ -10,23 +10,69 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var netLabel: UILabel!
     @IBOutlet weak var monthlyLabel: UILabel!
     @IBOutlet weak var expenseLabel: UILabel!
     @IBOutlet weak var moveButton: UIButton!
     
+    var finalMonthly = ""
+    
     var total = 0.0
     var expense = 0.0
     var budget = 0.0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    let date = Date()
+    var calendar = Calendar.current
+    //let unitFlags = Set<Calendar.Component>([.day, .month, .year])
+    
+    func timeManagement(){
+        let month = calendar.component(.month, from: date)
+        let year = calendar.component(.year, from: date)
+        let day = calendar.component(.day, from: date)
         
-        netLabel.text = "$0.00"
-        monthlyLabel.text = "$0.00"
-        expenseLabel.text = "$0.00"
+        //Set Year Label
+        let stringYear = String(year)
+        yearLabel.text = stringYear
         
-        // Do any additional setup after loading the view, typically from a nib.
+        //Set Month Label
+        if(month == 1){
+            monthLabel.text = "January"
+        }
+        else if(month == 2){
+            monthLabel.text = "February"
+        }
+        else if(month == 3){
+            monthLabel.text = "March"
+        }
+        else if(month == 4){
+            monthLabel.text = "April"
+        }
+        else if(month == 5){
+            monthLabel.text = "May"
+        }
+        else if(month == 6){
+            monthLabel.text = "June"
+        }
+        else if(month == 7){
+            monthLabel.text = "July"
+        }
+        else if(month == 8){
+            monthLabel.text = "August"
+        }
+        else if(month == 9){
+            monthLabel.text = "September"
+        }
+        else if(month == 10){
+            monthLabel.text = "October"
+        }
+        else if(month == 11){
+            monthLabel.text = "November"
+        }
+        else{
+            monthLabel.text = "December"
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,8 +82,12 @@ class ViewController: UIViewController {
     
     func setMonthlyBudget(monthlyBudget: Double){
         self.budget = monthlyBudget
-        let b:String = String(format:"%f", monthlyBudget)
-        monthlyLabel.text = b
+        finalMonthly = String(format:"%f", monthlyBudget)
+    }
+    
+    @IBAction func refreshButton(_ sender: AnyObject) {
+        print(finalMonthly)
+        monthlyLabel!.text = finalMonthly
     }
     
     func setExpense(expense: Double){
@@ -59,6 +109,15 @@ class ViewController: UIViewController {
     
     func getTotal() -> Double{
         return updateTotal()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        timeManagement()
+        
+        //monthlyLabel.text = "$0.00"
+        // Do any additional setup after loading the view, typically from a nib.
     }
 
 }

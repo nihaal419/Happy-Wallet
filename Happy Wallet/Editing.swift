@@ -79,9 +79,11 @@ class Editing: UIViewController {
     
     @IBAction func moveBack(_ sender: AnyObject) {
 //        navigationController?.popToRootViewController(animated: true)
-        let myDouble = Double(finalString)
+        let myDouble = Double(finalString)!
+        print(myDouble)
         let view = ViewController()
-        view.setMonthlyBudget(monthlyBudget: myDouble!)
+        view.setMonthlyBudget(monthlyBudget: myDouble)
+        view.finalMonthly = finalString
     }
     
     override func viewDidLoad() {
@@ -95,5 +97,12 @@ class Editing: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if (segue.identifier == "segueTest") {
+//            let svc = segue.destination as! ViewController;
+//            
+//            svc.finalMonthly = finalString
+//            
+//        }
+//    }
 }
