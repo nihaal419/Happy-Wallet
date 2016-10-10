@@ -34,7 +34,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Polygon" translatesAutoresizingMaskIntoConstraints="NO" id="1TP-dT-Nlf"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Budget Target" translatesAutoresizingMaskIntoConstraints="NO" id="mv6-NU-lxR"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="January" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-d3-Szy">
-                                <frame key="frameInset" minX="16" minY="76" maxX="164" maxY="535"/>
+                                <frame key="frameInset" minX="16" minY="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="173" id="oeS-eW-wIs"/>
                                 </constraints>
@@ -71,6 +71,13 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2j-dI-hlA">
+                                <frame key="frameInset" minX="110" minY="124" width="27" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.32941176470588235" green="0.7803921568627451" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.31372549019607843" green="0.41176470588235292" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -99,7 +106,9 @@
                             <constraint firstItem="LPL-uR-qLO" firstAttribute="leading" secondItem="2wH-qc-LIT" secondAttribute="leadingMargin" constant="85" id="xfC-9Q-7fd"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
+                        <outlet property="dayLabel" destination="p2j-dI-hlA" id="QfY-yy-Eb5"/>
                         <outlet property="monthLabel" destination="Tlh-d3-Szy" id="MsC-48-YCH"/>
                         <outlet property="yearLabel" destination="gzW-OJ-RqJ" id="zba-x9-Hd6"/>
                     </connections>

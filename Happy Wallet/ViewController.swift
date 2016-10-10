@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var netLabel: UILabel!
     @IBOutlet weak var monthlyLabel: UILabel!
     @IBOutlet weak var expenseLabel: UILabel!
     @IBOutlet weak var moveButton: UIButton!
+
+    let numberFormatter = NumberFormatter()
     
     var finalMonthly = ""
     
@@ -31,6 +34,10 @@ class ViewController: UIViewController {
         let month = calendar.component(.month, from: date)
         let year = calendar.component(.year, from: date)
         let day = calendar.component(.day, from: date)
+        
+        //Set Day Label
+        let stringDay = String(day)
+        dayLabel.text = stringDay
         
         //Set Year Label
         let stringYear = String(year)
@@ -81,17 +88,16 @@ class ViewController: UIViewController {
     }
     
     func setMonthlyBudget(monthlyBudget: Double){
-        self.budget = monthlyBudget
-        finalMonthly = String(format:"%f", monthlyBudget)
+        //Take NSNumber of monthly budget and format it for currency
+        budget += monthlyBudget
+        numberFormatter.numberStyle = .currency
+        numberFormatter.locale = Locale.current
+        let formattedNum = numberFormatter.string(from: NSNumber.init(value: monthlyBudget))
+        monthlyLabel.text = formattedNum
     }
     
-    @IBAction func refreshButton(_ sender: AnyObject) {
-        print(finalMonthly)
-        monthlyLabel!.text = finalMonthly
-    }
-    
-    func setExpense(expense: Double){
-        self.expense = expense
+    func setExpense(newExpense: Double){
+        expense += newExpense
     }
     
     func updateTotal() -> Double{
